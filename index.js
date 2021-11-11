@@ -17,7 +17,12 @@ function move(elem) {
     }
   }
 }
+function startMoving() {
+  console.log("start");
+  move(document.getElementById("myBar"));
+  move(document.getElementById("myBar2"));
+  move(document.getElementById("myBar3"));
+}
+startMoving();
 
-move(document.getElementById("myBar"));
-move(document.getElementById("myBar2"));
-move(document.getElementById("myBar3"));
+document.getElementById("skillsID").addEventListener("click", startMoving);

@@ -193,7 +193,7 @@ img {
   height: 100vh;
 }
 .section-content {
-  padding: 20px 45px;
+  padding: 30px 45px;
 }
 .main-content .about-content p {
   text-align: justify;
@@ -271,15 +271,29 @@ img {
 .main-content .about-content .about-button a:hover:before {
   width: 150%;
 }
-.skills-bar {
+.main-content .skills-bar {
   width: 60%;
+}
+.main-content h4 {
+  /* color: #002245; */
+  color: #970549;
+  padding: 10px 0;
+}
+.skills-bar .skill-item {
+  display: flex;
+  padding: 7px;
+}
+.skills-bar .skill-item h5 {
+  flex: 0 0 20%;
+  font-size: 16px;
+  color: #4169e1;
+  padding: 0 5px;
 }
 .skills-bar .skill-block {
   width: 100%;
   background-color: rgb(223, 221, 221);
   border-radius: 20px;
 }
-
 .skills-bar .skill-value {
   color: #ffffff;
   font-size: 14px;
@@ -290,8 +304,13 @@ img {
   border-radius: 20px;
   background-color: #012a53;
 }
-.skills-list {
+.tech-skills-list {
   display: flex;
+  padding: 20px 30px;
+  justify-content: start;
+}
+.tech-skills-list .skills-list__block {
+  padding-right: 60px;
 }
 .prof-title {
   font-size: 16px;
@@ -313,12 +332,14 @@ img {
   font-weight: 400;
   line-height: 24px;
 }
-.prof-duties {
+.prof-duties,
+.skills-list {
   margin-top: 10px;
   margin-bottom: 30px;
   margin-left: 20px;
 }
-.prof-duties-item {
+.prof-duties-item,
+.skills-list-item {
   color: #595959;
   font-size: 16px;
   font-weight: 400;
